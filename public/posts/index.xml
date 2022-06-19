@@ -6,8 +6,39 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Wed, 25 May 2022 09:07:02 +0200</lastBuildDate>
+        <lastBuildDate>Sun, 19 Jun 2022 15:48:41 +0200</lastBuildDate>
         <atom:link href="https://technet.cc/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Cryptgeon</title>
+            <link>https://technet.cc/posts/2022/06/cryptgeon/</link>
+            <pubDate>Sun, 19 Jun 2022 15:48:41 +0200</pubDate>
+            
+            <guid>https://technet.cc/posts/2022/06/cryptgeon/</guid>
+            <description>Introduction If you are sharing passwords or other sensitive data over IM, email etc. you should take a look at this free web application. The application is called cryptgeon and is developed by a guy called Nicco. The application will only keep the shared secrets/files in memory and not write the data to disk. You can have a look at his GitHub repo here or see the screenshot below for the UI.</description>
+            <content type="html"><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>If you are sharing passwords or other sensitive data over IM, email etc. you should take a look at this free web application. The application is called cryptgeon and is developed by a guy called <a href="https://github.com/cupcakearmy">Nicco</a>. The application will only keep the shared secrets/files in memory and not write the data to disk. You can have a look at his GitHub repo <a href="https://github.com/cupcakearmy/cryptgeon">here</a> or see the screenshot below for the UI.</p>
+<p><img src="/img/posts/cryptgeon.png" alt="cryptgeon"></p>
+<h2 id="docker-compose">Docker Compose</h2>
+<p>If you are using docker engine and docker-compose here&rsquo;s the compose file I&rsquo;m using to run the application.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">version</span>: <span style="color:#e6db74">&#39;3.7&#39;</span>
+
+<span style="color:#f92672">services</span>:
+  <span style="color:#f92672">memcached</span>:
+    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">memcached:1-alpine</span>
+    <span style="color:#f92672">entrypoint</span>: <span style="color:#ae81ff">memcached -m 128M -I 4M</span> <span style="color:#75715e"># Limit to 128 MB Ram, 4M per entry, customize at free will.</span>
+
+  <span style="color:#f92672">app</span>:
+    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">cupcakearmy/cryptgeon:latest</span>
+    <span style="color:#f92672">depends_on</span>:
+      - <span style="color:#ae81ff">memcached</span>
+    <span style="color:#f92672">environment</span>:
+      <span style="color:#f92672">SIZE_LIMIT</span>: <span style="color:#ae81ff">4M</span>
+    <span style="color:#f92672">ports</span>:
+      - <span style="color:#ae81ff">82</span>:<span style="color:#ae81ff">5000</span>
+    <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">unless-stopped</span>
+</code></pre></div>]]></content>
+        </item>
         
         <item>
             <title>Docker Hosting</title>
@@ -65,7 +96,7 @@ external-kvm-host
 <h2 id="nginx-proxy-manager">Nginx Proxy Manager</h2>
 <p><a href="https://nginxproxymanager.com/">Nginx Proxy Manager</a> is (as the name states) a proxy manager similar to <a href="https://traefik.io">Traefik</a>. I use it on all the docker engine hosts to control certificates, routing &amp; all the url&rsquo;s.</p>
 <h2 id="links--resources">Links &amp; Resources</h2>
-<p>Below you can find some usefull links and doc&rsquo;s to get started on a setup similar to the above described.</p>
+<p>Below you can find some usefull links and doc&rsquo;s to get started on a setup similar to the above.</p>
 <h3 id="proxmox-1">Proxmox</h3>
 <p><a href="https://pve.proxmox.com/wiki/Installation">Install Proxmox VE</a><br>
 <a href="https://github.com/Weilbyte/PVEDiscordDark">Dark theme for Proxmox VE</a><br>

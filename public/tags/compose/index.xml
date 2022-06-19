@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>docker on Tech[Net]</title>
-    <link>https://technet.cc/tags/docker/</link>
-    <description>Recent content in docker on Tech[Net]</description>
+    <title>compose on Tech[Net]</title>
+    <link>https://technet.cc/tags/compose/</link>
+    <description>Recent content in compose on Tech[Net]</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 19 Jun 2022 15:48:41 +0200</lastBuildDate><atom:link href="https://technet.cc/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Jun 2022 15:48:41 +0200</lastBuildDate><atom:link href="https://technet.cc/tags/compose/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cryptgeon</title>
       <link>https://technet.cc/posts/2022/06/cryptgeon/</link>
@@ -15,15 +15,6 @@
       
       <guid>https://technet.cc/posts/2022/06/cryptgeon/</guid>
       <description>Introduction If you are sharing passwords or other sensitive data over IM, email etc. you should take a look at this free web application. The application is called cryptgeon and is developed by a guy called Nicco. The application will only keep the shared secrets/files in memory and not write the data to disk. You can have a look at his GitHub repo here or see the screenshot below for the UI.</description>
-    </item>
-    
-    <item>
-      <title>Docker Hosting</title>
-      <link>https://technet.cc/posts/2022/05/docker-hosting/</link>
-      <pubDate>Wed, 25 May 2022 09:07:02 +0200</pubDate>
-      
-      <guid>https://technet.cc/posts/2022/05/docker-hosting/</guid>
-      <description>Introduction All of the my lab &amp;amp; hosting needs are done thru various open source products. I like using docker engine &amp;amp; docker-compose for quickly getting products spun up. I&amp;rsquo;ve had a look at using k8s instead, but for home usage and my needs I think it is to much. In the setup I also have a external vps which is hosting this website as one of the products. Below I&amp;rsquo;ll run thu all the products I&amp;rsquo;m using.</description>
     </item>
     
   </channel>

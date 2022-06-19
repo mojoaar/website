@@ -9,6 +9,7 @@ tags:
   - linux
   - portainer
   - proxmox
+  - nginx
   - opensource
   - selfhosted
 ---
@@ -63,7 +64,7 @@ I think [docker](https://www.docker.com/) is known to most people working with c
 ## Nginx Proxy Manager
 [Nginx Proxy Manager](https://nginxproxymanager.com/) is (as the name states) a proxy manager similar to [Traefik](https://traefik.io). I use it on all the docker engine hosts to control certificates, routing & all the url's.
 ## Links & Resources
-Below you can find some usefull links and doc's to get started on a setup similar to the above described.
+Below you can find some usefull links and doc's to get started on a setup similar to the above.
 ### Proxmox
 [Install Proxmox VE](https://pve.proxmox.com/wiki/Installation)  
 [Dark theme for Proxmox VE](https://github.com/Weilbyte/PVEDiscordDark)  

@@ -2,11 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://technet.cc/about/</loc>
-    <lastmod>2022-06-14T00:00:00+00:00</lastmod>
+    <loc>https://technet.cc/tags/application/</loc>
+    <lastmod>2022-06-19T15:48:41+02:00</lastmod>
+  </url><url>
+    <loc>https://technet.cc/tags/compose/</loc>
+    <lastmod>2022-06-19T15:48:41+02:00</lastmod>
+  </url><url>
+    <loc>https://technet.cc/posts/2022/06/cryptgeon/</loc>
+    <lastmod>2022-06-19T15:48:41+02:00</lastmod>
   </url><url>
     <loc>https://technet.cc/tags/docker/</loc>
-    <lastmod>2022-05-25T09:07:02+02:00</lastmod>
+    <lastmod>2022-06-19T15:48:41+02:00</lastmod>
+  </url><url>
+    <loc>https://technet.cc/tags/opensource/</loc>
+    <lastmod>2022-06-19T15:48:41+02:00</lastmod>
+  </url><url>
+    <loc>https://technet.cc/posts/</loc>
+    <lastmod>2022-06-19T15:48:41+02:00</lastmod>
+  </url><url>
+    <loc>https://technet.cc/tags/security/</loc>
+    <lastmod>2022-06-19T15:48:41+02:00</lastmod>
+  </url><url>
+    <loc>https://technet.cc/tags/selfhosted/</loc>
+    <lastmod>2022-06-19T15:48:41+02:00</lastmod>
+  </url><url>
+    <loc>https://technet.cc/tags/</loc>
+    <lastmod>2022-06-19T15:48:41+02:00</lastmod>
+  </url><url>
+    <loc>https://technet.cc/</loc>
+    <lastmod>2022-06-19T15:48:41+02:00</lastmod>
+  </url><url>
+    <loc>https://technet.cc/about/</loc>
+    <lastmod>2022-06-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://technet.cc/posts/2022/05/docker-hosting/</loc>
     <lastmod>2022-05-25T09:07:02+02:00</lastmod>
@@ -14,25 +41,13 @@
     <loc>https://technet.cc/tags/linux/</loc>
     <lastmod>2022-05-25T09:07:02+02:00</lastmod>
   </url><url>
-    <loc>https://technet.cc/tags/opensource/</loc>
+    <loc>https://technet.cc/tags/nginx/</loc>
     <lastmod>2022-05-25T09:07:02+02:00</lastmod>
   </url><url>
     <loc>https://technet.cc/tags/portainer/</loc>
     <lastmod>2022-05-25T09:07:02+02:00</lastmod>
   </url><url>
-    <loc>https://technet.cc/posts/</loc>
-    <lastmod>2022-05-25T09:07:02+02:00</lastmod>
-  </url><url>
     <loc>https://technet.cc/tags/proxmox/</loc>
-    <lastmod>2022-05-25T09:07:02+02:00</lastmod>
-  </url><url>
-    <loc>https://technet.cc/tags/selfhosted/</loc>
-    <lastmod>2022-05-25T09:07:02+02:00</lastmod>
-  </url><url>
-    <loc>https://technet.cc/tags/</loc>
-    <lastmod>2022-05-25T09:07:02+02:00</lastmod>
-  </url><url>
-    <loc>https://technet.cc/</loc>
     <lastmod>2022-05-25T09:07:02+02:00</lastmod>
   </url><url>
     <loc>https://technet.cc/categories/</loc>
