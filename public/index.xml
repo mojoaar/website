@@ -7,25 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 15 Jun 2022 09:07:02 +0200</lastBuildDate><atom:link href="https://technet.cc/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Docker Hosting</title>
-      <link>https://technet.cc/posts/2022/06/docker-hosting/</link>
-      <pubDate>Wed, 15 Jun 2022 09:07:02 +0200</pubDate>
-      
-      <guid>https://technet.cc/posts/2022/06/docker-hosting/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>How to: Deploy Code Server</title>
-      <link>https://technet.cc/posts/2022/06/how-to-deploy-code-server/</link>
-      <pubDate>Tue, 14 Jun 2022 20:22:59 +0200</pubDate>
-      
-      <guid>https://technet.cc/posts/2022/06/how-to-deploy-code-server/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Wed, 25 May 2022 09:07:02 +0200</lastBuildDate><atom:link href="https://technet.cc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>https://technet.cc/about/</link>
@@ -34,6 +16,15 @@
       <guid>https://technet.cc/about/</guid>
       <description>I&amp;rsquo;m a highly motivated IT Technology professional with over 15 years of experience operating, designing, implementing, securing and supporting complex critical enterprise technical solutions. Before my endeavour in IT, I was a Tank Gunner on a Danish Leopard 1A5DK tank with the Jutland Dragoons (JDR) in Holstebro, Denmark. Got one deployment on my military record, Iraq in 2004-2005 with JDR.
 Within IT Technology, I have a strong technical background with a deep understanding of Data Center Infrastructure, Windows &amp;amp; Linux Servers, Virtualization &amp;amp; Cloud, Development &amp;amp; Scripting, Monitoring of Infrastructure &amp;amp; Automation, Orchestration &amp;amp; Integration disciplines.</description>
+    </item>
+    
+    <item>
+      <title>Docker Hosting</title>
+      <link>https://technet.cc/posts/2022/05/docker-hosting/</link>
+      <pubDate>Wed, 25 May 2022 09:07:02 +0200</pubDate>
+      
+      <guid>https://technet.cc/posts/2022/05/docker-hosting/</guid>
+      <description>Introduction All of the my lab &amp;amp; hosting needs are done thru various open source products. I like using docker engine &amp;amp; docker-compose for quickly getting products spun up. I&amp;rsquo;ve had a look at using k8s instead, but for home usage and my needs I think it is to much. In the setup I also have a external vps which is hosting this website as one of the products. Below I&amp;rsquo;ll run thu all the products I&amp;rsquo;m using.</description>
     </item>
     
   </channel>

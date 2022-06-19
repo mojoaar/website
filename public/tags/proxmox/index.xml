@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>linux on Tech[Net]</title>
-    <link>https://technet.cc/tags/linux/</link>
-    <description>Recent content in linux on Tech[Net]</description>
+    <title>proxmox on Tech[Net]</title>
+    <link>https://technet.cc/tags/proxmox/</link>
+    <description>Recent content in proxmox on Tech[Net]</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 25 May 2022 09:07:02 +0200</lastBuildDate><atom:link href="https://technet.cc/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 May 2022 09:07:02 +0200</lastBuildDate><atom:link href="https://technet.cc/tags/proxmox/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker Hosting</title>
       <link>https://technet.cc/posts/2022/05/docker-hosting/</link>

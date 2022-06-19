@@ -6,27 +6,76 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Wed, 15 Jun 2022 09:07:02 +0200</lastBuildDate>
+        <lastBuildDate>Wed, 25 May 2022 09:07:02 +0200</lastBuildDate>
         <atom:link href="https://technet.cc/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
             <title>Docker Hosting</title>
-            <link>https://technet.cc/posts/2022/06/docker-hosting/</link>
-            <pubDate>Wed, 15 Jun 2022 09:07:02 +0200</pubDate>
+            <link>https://technet.cc/posts/2022/05/docker-hosting/</link>
+            <pubDate>Wed, 25 May 2022 09:07:02 +0200</pubDate>
             
-            <guid>https://technet.cc/posts/2022/06/docker-hosting/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>How to: Deploy Code Server</title>
-            <link>https://technet.cc/posts/2022/06/how-to-deploy-code-server/</link>
-            <pubDate>Tue, 14 Jun 2022 20:22:59 +0200</pubDate>
-            
-            <guid>https://technet.cc/posts/2022/06/how-to-deploy-code-server/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
+            <guid>https://technet.cc/posts/2022/05/docker-hosting/</guid>
+            <description>Introduction All of the my lab &amp;amp; hosting needs are done thru various open source products. I like using docker engine &amp;amp; docker-compose for quickly getting products spun up. I&amp;rsquo;ve had a look at using k8s instead, but for home usage and my needs I think it is to much. In the setup I also have a external vps which is hosting this website as one of the products. Below I&amp;rsquo;ll run thu all the products I&amp;rsquo;m using.</description>
+            <content type="html"><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>All of the my lab &amp; hosting needs are done thru various open source products. I like using docker engine &amp; docker-compose for quickly getting products spun up. I&rsquo;ve had a look at using <a href="https://kubernetes.io">k8s</a> instead, but for home usage and my needs I think it is to much. In the setup I also have a external vps which is hosting this website as one of the products. Below I&rsquo;ll run thu all the products I&rsquo;m using.</p>
+<h2 id="architecture-overview">Architecture Overview</h2>
+<p>Below is an overview of how I have done my setup. Basicly all vm/lxc&rsquo;s are deployed with Ubuntu 22.04, then docker-engine and docker-compose, portainer ce for controling the environments from one central location and nginx proxy manager to control url&rsquo;s, certificates (let&rsquo;s encrypt) and routing to hosts.</p>
+<pre tabindex="0"><code>proxmox-ha-cluster  
+│
+└───proxmox-host1
+│   │
+│   └───proxmox-vm
+│       │   docker-engine
+│       │   docker-compose
+│       │   portainer-main
+│       │   nginx-proxymanager
+│       │   app-a
+│       │   app-b
+│       │   app-c
+│
+└───proxmox-host2
+│   │
+│   └───proxmox-lxc
+│       │   docker-engine
+│       │   docker-compose
+│       │   portainer-agent
+│       │   nginx-proxymanager
+│       │   app-a
+│       │   app-b
+│       │   app-c
+│
+external-kvm-host
+│
+└───external-vps
+    │
+    └───external-vm
+        │   docker-engine
+        │   docker-compose
+        │   portainer-agent
+        │   nginx-proxymanager
+        │   app-a
+        │   app-b
+        │   app-c
+</code></pre><h2 id="proxmox">Proxmox</h2>
+<p>I use <a href="https://www.proxmox.com/en/">Proxmox</a> as the hypervisor at home. I switches from VMware ~2 years ago and have not looked back since. One of the benefits I like with Proxmox is the ability to deploy LXC containers out of the box. I have 2 hosts at home, setup in a HA Cluster for failover.</p>
+<h2 id="docker--docker-compose">Docker &amp; docker-compose</h2>
+<p>I think <a href="https://www.docker.com/">docker</a> is known to most people working with container environments. Together with docker compose, it is perfect for quickly deploying new apps in your infrastructure.</p>
+<h2 id="portainer-ce">Portainer CE</h2>
+<p><a href="https://www.portainer.io/">Portainer</a> is a container management platform. It comes in 2 flavours, a paid (business) edition and then the free one called portainer ce. In my own setup I have 1 portainer ce app running, and then the 2 other hosts are linked up thru the portainer agent.</p>
+<h2 id="nginx-proxy-manager">Nginx Proxy Manager</h2>
+<p><a href="https://nginxproxymanager.com/">Nginx Proxy Manager</a> is (as the name states) a proxy manager similar to <a href="https://traefik.io">Traefik</a>. I use it on all the docker engine hosts to control certificates, routing &amp; all the url&rsquo;s.</p>
+<h2 id="links--resources">Links &amp; Resources</h2>
+<p>Below you can find some usefull links and doc&rsquo;s to get started on a setup similar to the above described.</p>
+<h3 id="proxmox-1">Proxmox</h3>
+<p><a href="https://pve.proxmox.com/wiki/Installation">Install Proxmox VE</a><br>
+<a href="https://github.com/Weilbyte/PVEDiscordDark">Dark theme for Proxmox VE</a><br>
+<a href="https://johnscs.com/remove-proxmox51-subscription-notice/">Remove Proxmox subscription warning</a></p>
+<h3 id="docker--docker-compose-1">Docker &amp; docker-compose</h3>
+<p><a href="https://docs.docker.com/engine/install/ubuntu/">Install docker engine on Ubuntu</a><br>
+<a href="https://docs.docker.com/compose/install/compose-plugin/">Install docker compose on Ubuntu</a></p>
+<h3 id="nginx-proxy-manager-1">Nginx Proxy Manager</h3>
+<p><a href="https://nginxproxymanager.com/setup/">Install Nginx Proxy Manager</a></p>
+]]></content>
         </item>
         
     </channel>
