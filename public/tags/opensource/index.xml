@@ -7,11 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 19 Jun 2022 15:48:41 +0200</lastBuildDate><atom:link href="https://technet.cc/tags/opensource/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Jun 2022 15:48:41 +0200</lastBuildDate><atom:link href="https://technet.cc/tags/opensource/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cryptgeon</title>
       <link>https://technet.cc/posts/2022/06/cryptgeon/</link>
-      <pubDate>Sun, 19 Jun 2022 15:48:41 +0200</pubDate>
+      <pubDate>Thu, 02 Jun 2022 15:48:41 +0200</pubDate>
       
       <guid>https://technet.cc/posts/2022/06/cryptgeon/</guid>
       <description>Introduction If you are sharing passwords or other sensitive data over IM, email etc. you should take a look at this free web application. The application is called cryptgeon and is developed by a guy called Nicco. The application will only keep the shared secrets/files in memory and not write the data to disk. You can have a look at his GitHub repo here or see the screenshot below for the UI.</description>

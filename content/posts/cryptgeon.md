@@ -1,7 +1,7 @@
 ---
 title: "Cryptgeon"
-date: 2022-06-19T15:48:41+02:00
-draft: true
+date: 2022-06-02T15:48:41+02:00
+draft: false
 toc: true
 images:
 tags:
@@ -15,7 +15,7 @@ tags:
 ## Introduction
 If you are sharing passwords or other sensitive data over IM, email etc. you should take a look at this free web application. The application is called cryptgeon and is developed by a guy called [Nicco](https://github.com/cupcakearmy). The application will only keep the shared secrets/files in memory and not write the data to disk. You can have a look at his GitHub repo [here](https://github.com/cupcakearmy/cryptgeon) or see the screenshot below for the UI.
 
-![cryptgeon](/img/posts/cryptgeon.png)
+[![cryptgeon](/img/posts/cryptgeon.png)](/img/posts/cryptgeon.png)
 
 ## Docker Compose
 If you are using docker engine and docker-compose here's the compose file I'm using to run the application.

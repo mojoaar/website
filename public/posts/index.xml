@@ -6,19 +6,54 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Sun, 19 Jun 2022 15:48:41 +0200</lastBuildDate>
+        <lastBuildDate>Sun, 19 Jun 2022 16:28:46 +0200</lastBuildDate>
         <atom:link href="https://technet.cc/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Predictive Intellisense</title>
+            <link>https://technet.cc/posts/2022/06/predictive-intellisense/</link>
+            <pubDate>Sun, 19 Jun 2022 16:28:46 +0200</pubDate>
+            
+            <guid>https://technet.cc/posts/2022/06/predictive-intellisense/</guid>
+            <description>Introduction If you are using PowerShell (pwsh) on a daily basis like me, you should take a look at enabling Predictive IntelliSense in your pwsh prompt. It was announced in late 2020 but I dont think that many people are aware and have it enabled in their pwsh profile. You can think of Predictive IntelliSense like taking tab completion to the next level.
+How to  Check that you have (PSReadLine) minimum version 2.</description>
+            <content type="html"><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>If you are using PowerShell (pwsh) on a daily basis like me, you should take a look at enabling Predictive IntelliSense in your pwsh prompt. It was announced in <a href="https://devblogs.microsoft.com/powershell/announcing-psreadline-2-1-with-predictive-intellisense/">late 2020</a> but I dont think that many people are aware and have it enabled in their pwsh profile. You can think of Predictive IntelliSense like taking tab completion to the next level.</p>
+<h2 id="how-to">How to</h2>
+<ol>
+<li>Check that you have (PSReadLine) minimum version 2.1.0 installed.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">Get-Module -ListAvailable -Name PSReadLine
+</code></pre></div><ol start="2">
+<li>If not install/update it from PowerShell Gallery.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">Find-Module PSReadLine -Repository PSGallery
+</code></pre></div><ol start="3">
+<li>Import the module to your pwsh session.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">Import-Module PSReadLine
+</code></pre></div><ol start="4">
+<li>Set PSReadLine option (add it to your $profile so it will load on each new session).</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">Set-PSReadLineOption -PredictionSource History -PredictionViewStyle ListView
+</code></pre></div><h2 id="screenshots">Screenshots</h2>
+<p>Find the module on PoserShell Gallery.
+<a href="/img/posts/psreadline.png"><img src="/img/posts/psreadline.png" alt="PSReadLine"></a></p>
+<p>Using Predictive IntelliSense from your prompt.
+<a href="/img/posts/psreadline2.png"><img src="/img/posts/psreadline2.png" alt="PSReadLine"></a></p>
+]]></content>
+        </item>
         
         <item>
             <title>Cryptgeon</title>
             <link>https://technet.cc/posts/2022/06/cryptgeon/</link>
-            <pubDate>Sun, 19 Jun 2022 15:48:41 +0200</pubDate>
+            <pubDate>Thu, 02 Jun 2022 15:48:41 +0200</pubDate>
             
             <guid>https://technet.cc/posts/2022/06/cryptgeon/</guid>
             <description>Introduction If you are sharing passwords or other sensitive data over IM, email etc. you should take a look at this free web application. The application is called cryptgeon and is developed by a guy called Nicco. The application will only keep the shared secrets/files in memory and not write the data to disk. You can have a look at his GitHub repo here or see the screenshot below for the UI.</description>
             <content type="html"><![CDATA[<h2 id="introduction">Introduction</h2>
 <p>If you are sharing passwords or other sensitive data over IM, email etc. you should take a look at this free web application. The application is called cryptgeon and is developed by a guy called <a href="https://github.com/cupcakearmy">Nicco</a>. The application will only keep the shared secrets/files in memory and not write the data to disk. You can have a look at his GitHub repo <a href="https://github.com/cupcakearmy/cryptgeon">here</a> or see the screenshot below for the UI.</p>
-<p><img src="/img/posts/cryptgeon.png" alt="cryptgeon"></p>
+<p><a href="/img/posts/cryptgeon.png"><img src="/img/posts/cryptgeon.png" alt="cryptgeon"></a></p>
 <h2 id="docker-compose">Docker Compose</h2>
 <p>If you are using docker engine and docker-compose here&rsquo;s the compose file I&rsquo;m using to run the application.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">version</span>: <span style="color:#e6db74">&#39;3.7&#39;</span>
@@ -106,6 +141,9 @@ external-kvm-host
 <a href="https://docs.docker.com/compose/install/compose-plugin/">Install docker compose on Ubuntu</a></p>
 <h3 id="nginx-proxy-manager-1">Nginx Proxy Manager</h3>
 <p><a href="https://nginxproxymanager.com/setup/">Install Nginx Proxy Manager</a></p>
+<h2 id="screenshots">Screenshots</h2>
+<p>Portainer CE UI.
+<a href="/img/posts/portainer.png"><img src="/img/posts/portainer.png" alt="Portainer"></a></p>
 ]]></content>
         </item>
         

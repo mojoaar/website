@@ -74,3 +74,6 @@ Below you can find some usefull links and doc's to get started on a setup simila
 [Install docker compose on Ubuntu](https://docs.docker.com/compose/install/compose-plugin/)
 ### Nginx Proxy Manager
 [Install Nginx Proxy Manager](https://nginxproxymanager.com/setup/)
+## Screenshots
+Portainer CE UI.
+[![Portainer](/img/posts/portainer.png)](/img/posts/portainer.png)
