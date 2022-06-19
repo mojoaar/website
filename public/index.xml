@@ -9,11 +9,11 @@
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 19 Jun 2022 16:28:46 +0200</lastBuildDate><atom:link href="https://technet.cc/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Predictive Intellisense</title>
-      <link>https://technet.cc/posts/2022/06/predictive-intellisense/</link>
+      <title>Predictive Intellisense in PowerShell</title>
+      <link>https://technet.cc/posts/2022/06/predictive-intellisense-in-powershell/</link>
       <pubDate>Sun, 19 Jun 2022 16:28:46 +0200</pubDate>
       
-      <guid>https://technet.cc/posts/2022/06/predictive-intellisense/</guid>
+      <guid>https://technet.cc/posts/2022/06/predictive-intellisense-in-powershell/</guid>
       <description>Introduction If you are using PowerShell (pwsh) on a daily basis like me, you should take a look at enabling Predictive IntelliSense in your pwsh prompt. It was announced in late 2020 but I dont think that many people are aware and have it enabled in their pwsh profile. You can think of Predictive IntelliSense like taking tab completion to the next level.
 How to  Check that you have (PSReadLine) minimum version 2.</description>
     </item>
@@ -38,9 +38,18 @@ Within IT Technology, I have a strong technical background with a deep understan
     </item>
     
     <item>
+      <title>Code Server</title>
+      <link>https://technet.cc/posts/2022/05/code-server/</link>
+      <pubDate>Fri, 13 May 2022 18:44:42 +0200</pubDate>
+      
+      <guid>https://technet.cc/posts/2022/05/code-server/</guid>
+      <description>Introduction I&amp;rsquo;ve been using VS Code as my primary editor for years and love using it. Emagine taking that experience to the browser and running VS Code with a consistent development environment?&amp;hellip;you can - with the docker engine and code-server! Actually this how I manage and maintain my site here at technet.cc. Thanks to the good folks at linuxserver.io who have made a ready to run container it is super easy getting it setup and running with the docker engine &amp;amp; docker-compose.</description>
+    </item>
+    
+    <item>
       <title>Docker Hosting</title>
       <link>https://technet.cc/posts/2022/05/docker-hosting/</link>
-      <pubDate>Wed, 25 May 2022 09:07:02 +0200</pubDate>
+      <pubDate>Thu, 05 May 2022 09:07:02 +0200</pubDate>
       
       <guid>https://technet.cc/posts/2022/05/docker-hosting/</guid>
       <description>Introduction All of the my lab &amp;amp; hosting needs are done thru various open source products. I like using docker engine &amp;amp; docker-compose for quickly getting products spun up. I&amp;rsquo;ve had a look at using k8s instead, but for home usage and my needs I think it is to much. In the setup I also have a external vps which is hosting this website as one of the products. Below I&amp;rsquo;ll run thu all the products I&amp;rsquo;m using.</description>

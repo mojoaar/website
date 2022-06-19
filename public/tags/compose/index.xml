@@ -17,5 +17,14 @@
       <description>Introduction If you are sharing passwords or other sensitive data over IM, email etc. you should take a look at this free web application. The application is called cryptgeon and is developed by a guy called Nicco. The application will only keep the shared secrets/files in memory and not write the data to disk. You can have a look at his GitHub repo here or see the screenshot below for the UI.</description>
     </item>
     
+    <item>
+      <title>Code Server</title>
+      <link>https://technet.cc/posts/2022/05/code-server/</link>
+      <pubDate>Fri, 13 May 2022 18:44:42 +0200</pubDate>
+      
+      <guid>https://technet.cc/posts/2022/05/code-server/</guid>
+      <description>Introduction I&amp;rsquo;ve been using VS Code as my primary editor for years and love using it. Emagine taking that experience to the browser and running VS Code with a consistent development environment?&amp;hellip;you can - with the docker engine and code-server! Actually this how I manage and maintain my site here at technet.cc. Thanks to the good folks at linuxserver.io who have made a ready to run container it is super easy getting it setup and running with the docker engine &amp;amp; docker-compose.</description>
+    </item>
+    
   </channel>
 </rss>

@@ -1,5 +1,5 @@
 ---
-title: "Predictive Intellisense"
+title: "Predictive Intellisense in PowerShell"
 date: 2022-06-19T16:28:46+02:00
 draft: false
 toc: true
@@ -9,6 +9,7 @@ tags:
   - pwsh
   - module
   - intellisense
+  - howto
 ---
 ## Introduction
 If you are using PowerShell (pwsh) on a daily basis like me, you should take a look at enabling Predictive IntelliSense in your pwsh prompt. It was announced in [late 2020](https://devblogs.microsoft.com/powershell/announcing-psreadline-2-1-with-predictive-intellisense/) but I dont think that many people are aware and have it enabled in their pwsh profile. You can think of Predictive IntelliSense like taking tab completion to the next level.

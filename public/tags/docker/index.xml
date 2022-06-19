@@ -18,9 +18,18 @@
     </item>
     
     <item>
+      <title>Code Server</title>
+      <link>https://technet.cc/posts/2022/05/code-server/</link>
+      <pubDate>Fri, 13 May 2022 18:44:42 +0200</pubDate>
+      
+      <guid>https://technet.cc/posts/2022/05/code-server/</guid>
+      <description>Introduction I&amp;rsquo;ve been using VS Code as my primary editor for years and love using it. Emagine taking that experience to the browser and running VS Code with a consistent development environment?&amp;hellip;you can - with the docker engine and code-server! Actually this how I manage and maintain my site here at technet.cc. Thanks to the good folks at linuxserver.io who have made a ready to run container it is super easy getting it setup and running with the docker engine &amp;amp; docker-compose.</description>
+    </item>
+    
+    <item>
       <title>Docker Hosting</title>
       <link>https://technet.cc/posts/2022/05/docker-hosting/</link>
-      <pubDate>Wed, 25 May 2022 09:07:02 +0200</pubDate>
+      <pubDate>Thu, 05 May 2022 09:07:02 +0200</pubDate>
       
       <guid>https://technet.cc/posts/2022/05/docker-hosting/</guid>
       <description>Introduction All of the my lab &amp;amp; hosting needs are done thru various open source products. I like using docker engine &amp;amp; docker-compose for quickly getting products spun up. I&amp;rsquo;ve had a look at using k8s instead, but for home usage and my needs I think it is to much. In the setup I also have a external vps which is hosting this website as one of the products. Below I&amp;rsquo;ll run thu all the products I&amp;rsquo;m using.</description>

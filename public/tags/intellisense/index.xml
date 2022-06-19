@@ -9,11 +9,11 @@
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 19 Jun 2022 16:28:46 +0200</lastBuildDate><atom:link href="https://technet.cc/tags/intellisense/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Predictive Intellisense</title>
-      <link>https://technet.cc/posts/2022/06/predictive-intellisense/</link>
+      <title>Predictive Intellisense in PowerShell</title>
+      <link>https://technet.cc/posts/2022/06/predictive-intellisense-in-powershell/</link>
       <pubDate>Sun, 19 Jun 2022 16:28:46 +0200</pubDate>
       
-      <guid>https://technet.cc/posts/2022/06/predictive-intellisense/</guid>
+      <guid>https://technet.cc/posts/2022/06/predictive-intellisense-in-powershell/</guid>
       <description>Introduction If you are using PowerShell (pwsh) on a daily basis like me, you should take a look at enabling Predictive IntelliSense in your pwsh prompt. It was announced in late 2020 but I dont think that many people are aware and have it enabled in their pwsh profile. You can think of Predictive IntelliSense like taking tab completion to the next level.
 How to  Check that you have (PSReadLine) minimum version 2.</description>
     </item>
